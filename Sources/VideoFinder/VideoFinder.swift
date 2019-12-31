@@ -13,7 +13,7 @@ final class TreeNode<Value> {
     }
     
 }
-final class Video {
+ public final class Video {
     public var videoFolderPaths = [String]()
     public  var videoFolders: [Folder] {
         get {
@@ -91,7 +91,7 @@ extension Folder {
         }
         return nil
     }
-    func findFilNameWithNear(name: String) -> String {
+    func findFilNameWithNear(name: String) -> String{
         "buddy says BOO"
     }
 }
