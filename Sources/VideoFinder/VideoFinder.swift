@@ -25,8 +25,8 @@ final class TreeNode<Value> {
      
     /// Default is VLC
     /// (Which is in Applications)
-    var pathToVideoPlayerCommand = "/Applications/VLC.app/Contents/MacOS/VLC"
-    func launchVideo(name: String ) throws {
+    public var pathToVideoPlayerCommand = "/Applications/VLC.app/Contents/MacOS/VLC"
+    public func launchVideo(name: String ) throws {
         for videoFolder in videoFolders {
             if let video = videoFolder.findFile(name) {
                 try shellOut(to: "\(pathToVideoPlayerCommand) \(video.path)")
