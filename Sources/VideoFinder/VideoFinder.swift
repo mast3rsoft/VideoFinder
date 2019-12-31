@@ -22,6 +22,7 @@ final class TreeNode<Value> {
             }
         }
     }
+     
     /// Default is VLC
     /// (Which is in Applications)
     var pathToVideoPlayerCommand = "/Applications/VLC.app/Contents/MacOS/VLC"
@@ -33,6 +34,7 @@ final class TreeNode<Value> {
         }
         throw FindError.MovieNotFound
     }
+     public init() {}
 }
 /*
 Folder.home.subfolders.recursive
