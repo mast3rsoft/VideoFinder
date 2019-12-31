@@ -15,7 +15,7 @@ final class TreeNode<Value> {
 }
  public final class Video {
     public var videoFolderPaths = [String]()
-    public  var videoFolders: [Folder] {
+     var videoFolders: [Folder] {
         get {
            try! videoFolderPaths.map { path in
                 try Folder(path: path)
