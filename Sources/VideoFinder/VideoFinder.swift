@@ -13,7 +13,7 @@ final class TreeNode<Value> {
     }
     
 }
-final class VideoFinder {
+final class Video {
     public var videoFolderPaths = [String]()
     public  var videoFolders: [Folder] {
         get {
